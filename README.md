@@ -56,3 +56,11 @@ and press F5 to build and launch the Koans (some time is needed to build the pro
 
 You can also use [dotnet-watch](https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/tutorials/dotnet-watch.md) to have your changes reloaded automatically.
 To do so, navigate into `FSharpKoans` directory and run `dotnet watch run`. Now, after you change the project code, it will be automatically reloaded and tests rerun.
+
+### Running with a higher .NET Version installed
+
+I've had to do this to make it run on Mac
+
+```sh
+dotnet watch run --project FSharpKoans/FSharpKoans.fsproj --roll-forward LatestMajor
+```
